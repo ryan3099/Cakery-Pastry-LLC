@@ -1,67 +1,120 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CAP Garland, LLC</title>
+  <title>Cakery Pastry, LLC</title>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet" />
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #f0f0f0;
-      color: #333;
+      font-family: 'Josefin Sans', sans-serif;
+      background-color: #fffaf5;
+      color: #2d2d2d;
     }
+
     header {
-      background-color: #003366;
+      background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+      padding: 120px 20px 60px;
       color: white;
-      padding: 30px 20px;
       text-align: center;
     }
-    section {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
+
+    header h1 {
+      font-size: 48px;
+      margin: 0;
     }
-    h1, h2 {
-      color: #003366;
+
+    nav {
+      background-color: #3e2f2f;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 14px 0;
     }
-    .contact {
-      background: #fff;
-      padding: 20px;
-      border-left: 5px solid #003366;
-      margin-top: 30px;
+
+    nav a {
+      color: #f4e7d1;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
     }
+
+    .section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 36px;
+      color: #a0522d;
+      margin-bottom: 20px;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .gallery img {
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
     footer {
-      background-color: #003366;
-      color: white;
+      background-color: #3e2f2f;
+      color: #f4e7d1;
       text-align: center;
-      padding: 15px;
-      margin-top: 50px;
+      padding: 30px;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>CAP Garland, LLC</h1>
-    <p>Private Investment Fund</p>
+    <h1>Cakery Pastry, LLC</h1>
+    <p>Elegant Bakes, Cozy Vibes — Based in Arden, NC</p>
   </header>
 
-  <section>
-    <h2>About Us</h2>
-    <p>CAP Garland, LLC is a Washington-based private investment fund focused on delivering value through diversified investment strategies.</p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#menu">Menu</a>
+    <a href="#events">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-    <h2>Contact</h2>
-    <div class="contact">
-      <p><strong>Address:</strong> 915 W 2nd Ave, Spokane, WA 99201</p>
-      <p><strong>Email:</strong> <a href="mailto:ryanberg@capgarland.shop">ryanberg@capgarland.shop</a></p>
-      <p><strong>Phone:</strong> (509) 822-3850</p>
+  <section class="section" id="about">
+    <h2>About Us</h2>
+    <p>Cakery Pastry, LLC brings warmth, sweetness, and artisan baking to the heart of Arden, North Carolina. Founded by Samantha McGlone, our shop blends the feel of a vintage café with the irresistible aroma of freshly baked pastries and handcrafted desserts.</p>
+  </section>
+
+  <section class="section" id="menu">
+    <h2>Our Signature Treats</h2>
+    <p>We specialize in seasonal pastries, classic cakes, gluten-free options, and locally inspired confections served daily with love and a touch of flair.</p>
+  </section>
+
+  <section class="section" id="events">
+    <h2>Our Space</h2>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1576186726113-b5ae2b0d289b?auto=format&fit=crop&w=600&q=80" alt="Bakery Interior 1" />
+      <img src="https://images.unsplash.com/photo-1579638938284-0d73cf270d3b?auto=format&fit=crop&w=600&q=80" alt="Bakery Interior 2" />
+      <img src="https://images.unsplash.com/photo-1606313567638-29817f81a997?auto=format&fit=crop&w=600&q=80" alt="Bakery Shelves" />
     </div>
   </section>
 
+  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Address:</strong> 2385 Hendersonville Rd 111, Arden, NC 28704</p>
+    <p><strong>Email:</strong> <a href="mailto:mcglone@cakerypastryllc.shop">mcglone@cakerypastryllc.shop</a></p>
+    <p><strong>Phone:</strong> <a href="tel:+15094014722">(509) 401-4722</a></p>
+  </section>
+
   <footer>
-    &copy; 2025 CAP Garland, LLC. All rights reserved.
+    <p>&copy; 2025 Cakery Pastry, LLC. All rights reserved. Handcrafted with love in Arden.</p>
   </footer>
 </body>
 </html>
